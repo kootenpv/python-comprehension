@@ -6,13 +6,13 @@ for i in range(10):
 # if
 options = []
 for i in range(10):
-    if i > 5
+    if i > 5:
         options.append(i)
 
 # if else
 options = []
 for i in range(10):
-    if i > 5
+    if i > 5:
         options.append(i)
     else:
         options.append(None)
@@ -20,7 +20,7 @@ for i in range(10):
 # if elif else: should not work!
 options = []
 for i in range(10):
-    if i > 5
+    if i > 5:
         options.append(i)
     elif i < 3:
         options.append(0)
