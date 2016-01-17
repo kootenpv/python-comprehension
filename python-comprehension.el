@@ -2,14 +2,12 @@
 
 (defun match-pattern-list (var-name line)
   (string-match (concat var-name ".append" "(\\([^)]+\\))") line)
-  (match-string 1 line)
-  )
+  (match-string 1 line))
 
 (defun find-list-symbol (start end)
   (let ((line (buffer-substring-no-properties start end)))
     (string-match "\\([^ \[(]+\\)[ ]*=" line)
-    (match-string 1 line)
-    ))
+    (match-string 1 line)))
 
 (defun match-pattern-dict (var-name line)
   ;; still needs key to be sovled
@@ -93,8 +91,7 @@
                                 (get-python-expression start end))
                         t (point) end))
        )))
-  (back-to-indentation)
-  )
+  (back-to-indentation))
 
 (defun get-python-expression (start end)
   (s-chop-suffix ":" (s-trim (car (split-string (buffer-substring start end) "\n")))))
