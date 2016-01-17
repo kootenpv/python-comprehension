@@ -1,21 +1,29 @@
-# simple for
-options = []
+# simple for dict
+options = {}
 for i in range(10):
-    options.append(i)
+    options[i] = i + 1
 
-# if
+# if for list
 options = []
 for i in range(10):
     if i > 5:
         options.append(i)
 
-# if else
-options = []
+# if else for set
+options = {}
 for i in range(10):
     if i > 5:
-        options.append(i)
+        options.add(i)
     else:
-        options.append(None)
+        options.add(None)
+
+# if else for dict
+options = {}
+for i in range(10):
+    if i > 5:
+        options[i] = i + 1
+    else:
+        options[i] = None
 
 # if elif else: should not work!
 options = []
