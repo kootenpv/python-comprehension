@@ -1,3 +1,5 @@
+(require 's)
+
 (defun match-pattern-list (var-name line)
   (string-match (concat var-name ".append" "(\\([^)]+\\))") line)
   (match-string 1 line)
